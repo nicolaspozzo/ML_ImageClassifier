@@ -86,8 +86,8 @@ function getPrediction() {
     }
     function gotResults(err, results) {
         console.log(results)
-        label = results[0].className;
-        prob = (results[0].probability * 100).toFixed(2) + " %";
+        label = results[0].label;
+        prob = (results[0].confidence * 100).toFixed(2) + " %";
         //console.log(label, prob)
         output.innerText = "Prediction: " + label;
         output2.innerText = "Probaility: " + prob;
