@@ -1,0 +1,60 @@
+
+body{
+    background-color: black;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#image-box{
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.container, .results{
+    margin:20px;
+}
+.btn{
+    border-radius: 25px;
+    border: 2px solid green;
+    font-size: 20px;
+}
+.file{
+    border-radius: 25px;
+    border: 2px solid green;
+    font-size: 20px;
+}
+.btn:hover{
+    background: green;
+    color:white;
+}
+#cancel{
+    border-radius: 25px;
+    border: 2px solid red;
+    font-size: 20px;
+}
+#cancel:hover{
+    background: red;
+    color:white;
+}
+#clear{width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-weight: bold;
+    border: 2px solid red;
+    font-size: 20px;
+}#clear:hover{
+    background: red;
+    color:white;
+}
+.txt{
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 20px;
+    width: 90%;
+}
+.txt:hover{
+    border: 2px solid green;
+}

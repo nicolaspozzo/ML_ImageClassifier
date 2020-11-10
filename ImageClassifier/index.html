@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+    <script src="imageClassifier.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Classifier Image</h1>
+        <fieldset>
+            <legend>Image load mode</legend>
+            <form>
+                <input type="radio" id="chooser" name="chooser" value="chooser" onclick="habilitar()">
+                <label for="chooser">Chooser</label>
+                <br>
+                <input type="file" class="file" id="file-btn" onchange="fileSelected(event)" disabled>
+                <br>
+                <br>
+                <input type="radio" id="url" name="chooser" value="url" onclick="habilitar()">
+                <label for="url">URL</label><small>(only works with URLs beginning with data:image)</small>
+                <br>
+                <input type="text" id="url-image" class="txt" placeholder="  url" value="" disabled>
+                <input type="button" id="clear" value="X" onclick="clearURL()">
+                <br>
+                <br>
+                <input type="button" id="cancel" value="Cancel" onclick="clearFields()">
+                <input type="button" class="btn" id="btn-predict" value="Predict" onclick="getPrediction()">
+
+            </form>
+        </fieldset>
+    </div>
+    <div class="results">
+
+
+        <p id="output"></p>
+        <p id="output2"></p>
+        <p id="outputErr"></p>
+
+        <img id="image-box" src="" alt="" />
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
